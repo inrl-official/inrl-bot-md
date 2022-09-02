@@ -20,8 +20,8 @@ module.exports = {
         APP_NAME: process.env.HEROKU_APP_NAME || ''
     },
     profile: {
-    ownerName: "inrl", 
-    ownerNumb: "917025099154", 
+    ownerName: "Chris BOT", 
+    ownerNumb: "9044102961", 
     botName: "inrl-bot-md", 
   },
     reply: {
