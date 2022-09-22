@@ -4,14 +4,14 @@ const { existsSync } = require('fs')
 if (existsSync('config.env')) require('dotenv').config({ path: './config.env' })
 module.exports = {
     VERSION: 'V 1.0.0',
-    SESSION_ID: process.env.SESSION_ID || '',
-    PASSWORD: process.env.PASSWORD || '',
+    SESSION_ID: process.env.SESSION_ID || 'inrl~/tmjjL4NE24BJzT37P8mnIfzDlpccRhZ,
+    PASSWORD: process.env.PASSWORD || 'mohan1.',
     U_STATUS: process.env.U_STATUS || 'true',
     MENTION: process.env.MENTION || 'on',
     BGMBOT : process.env.BGMBOT || 'on',
     WORKTYPE: process.env.WORKTYPE || 'public',
     LANG :process.env.LANG || 'ml', //values are ml, en only
-    OWNER : process.env.OWNER || "917593919575",
+    OWNER : process.env.OWNER || "919025142177",
     BRANCH: 'master',
     SEND_READ: process.env.SEND_READ === undefined ? false : convertToBool(process.env.SEND_READ),
     HEROKU: {
@@ -20,9 +20,9 @@ module.exports = {
         APP_NAME: process.env.HEROKU_APP_NAME || 'inrl-teasting'
     },
     profile: {
-    ownerName: "inrl", 
-    ownerNumb: "917593919575", 
-    botName: "inrl-bot-md", 
+    ownerName: "vishwa", 
+    ownerNumb: "919025142177", 
+    botName: "vishwa", 
   },
     setting: {
     blockchat: [], // Your block chat Jids
@@ -43,7 +43,7 @@ module.exports = {
     read: false, // Boolean | ===== It not created now ======
   },
     CHATBOT : process.env.CHATBOT || 'null',
-    FOOTER : process.env.FOOTER || "ɪɴʀʟ-ᴍᴅ",
+    FOOTER : process.env.FOOTER || "vishwa",
     ALIVE : process.env.ALIVE || "https://i.imgur.com/DyLAuEh.jpg",
     IMG11 : process.env.IMG11 || "https://i.imgur.com/DyLAuEh.jpg",
     IMG12 : process.env.IMG12 || "https://imgur.com/AelfUJg.jpg",
@@ -54,7 +54,7 @@ module.exports = {
     WEB : process.env.WEB || "https://tinyurl.com/ycks3s8p",
     YT : process.env.YT || "https://tinyurl.com/36r3668n",
     CAPTION : process.env.CAPTION || "_created by inrl-bot_",
-    SUDO: process.env.SUDO || "917593919575",
+    SUDO: process.env.SUDO || "919025142177",
     VIDEO : "https://tinyurl.com/3x38ajmn",
     WAGRP : process.env.WAGRP || 'https://tinyurl.com/f5wh55mk',
     };
