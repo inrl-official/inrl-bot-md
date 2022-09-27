@@ -6,7 +6,7 @@
 		"bot",
                 "multi-divice"
 	],
-	"repository": "https://github.com/inrl-official/inrl-bot-md",
+	"repository": "https://github.com/inrl-official/inrl-bot-md/edit/master/app.json",
 	"env": {
        "SESSION_ID": {
             "description": "Your session id",
