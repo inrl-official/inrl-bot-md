@@ -283,16 +283,16 @@ if( _message == message.quoted.audioMessage) {
 
 if (text.includes(';')) {
          var split = text.split(';');
-         CreaterForAud = split[1];
-         TextForAud = split[0];
+         CreaterForAud = split[1] || 'inrl-official';
+         TextForAud = split[0] || 'inrl-bot-md';
          imgForAud = split[2] || fs.readFileSync('./media/imagee.jpg');
       }
 const songBuffer = fs.readFileSync(media);
 const coverBuffer = imgForAud;
  
 const writer = new ID3Writer(songBuffer);
-writer.setFrame('TIT2', TextForAud ||  "inrl")
-      .setFrame('TPE1', [CreaterForAud,"inrl-bots"])
+writer.setFrame('TIT2', TextForAud)
+      .setFrame('TPE1', [CreaterForAud])
       .setFrame('TALB', TextForAud)
       .setFrame('TYER', 1999)
       .setFrame('APIC', {
@@ -335,16 +335,16 @@ await client.sendMessage(message.from,  { text : ImSg }, { quoted: message });
 });
 bots.inrl({pattern: ['tts'], desc: "to get text as audio ", sucReact: "💔", category: ['all'], }, (async (message, client) => {
 const text = message.client.text;
-	    if (!message.client.text) return await client.sendMessage( message.from, { text: 'Enter A text'}, { quoted: message });
+	    if (!text) return await client.sendMessage( message.from, { text: 'Enter A text'}, { quoted: message });
             var InRL ;
-            if (message.client.text.includes('#')) {
-            var split = message.client.text.split('#');
+            if (text.includes('#')) {
+            var split = text.split('#');
             TEXT = split[0];
             InRL = split[1];
            }
             let 
                 LANG = InRL || "en",
-                ttsMessage = TEXT || message.client.text,
+                ttsMessage = TEXT || text,
                 SPEED = 1.0
     
             var buffer = await googleTTS.synthesize({
