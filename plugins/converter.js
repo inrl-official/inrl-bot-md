@@ -353,11 +353,3 @@ const text = message.client.text;
             });
             await client.sendMessage( message.from, { audio:buffer, mimetype: "audio/mp4",ptt: true}, { quoted: message } );
         }));
-bots.inrl({pattern: ['mp3','audio'], desc: "to get video as audio ", sucReact: "💥", category: ['all'], }, (async (message, client) => {
-if (!/video/.test(message.client.mime) && !/audio/.test(message.client.mime))return await client.sendMessage( message.from, { text: 'Send/Reply Video/Audio You Want To Use As Audio With Caption '}, { quoted: message });
-            if (!message.quoted) return await client.sendMessage( message.from, { text: 'please replay to a video to get audio😛'}, { quoted: message });
-            let media = await message.quoted.download()
-            let { toAudio } = require('./lib/converter')
-            let audio = await toAudio(media, 'mp4')
-            client.sendMessage(message.from, {audio: audio, mimetype: 'audio/mpeg'}, { quoted : message })
-            }));
