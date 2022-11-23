@@ -8,11 +8,11 @@
 	],
 	"repository": "https://github.com/inrl-official/inrl-bot-md",
 	"env": {
-       "SESSION_ID": {
+       "SESSION_ID": {inrl~wPaHM865b77P7FSVUnDDwTeBhvDesPQ0
             "description": "Your session id",
             "required": true       
         },
-       "HEROKU_API_KEY": {
+       "HEROKU_API_KEY": {97e0dba0-cc93-4930-9664-e15007adabb8
             "description": "For updating bot and setting vars remotely",
             "required": true
         },
