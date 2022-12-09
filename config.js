@@ -4,8 +4,8 @@ const { existsSync } = require('fs')
 if (existsSync('config.env')) require('dotenv').config({ path: './config.env' })
 module.exports = {
     VERSION: 'V 1.0.0',
-    SESSION_ID: process.env.SESSION_ID || '',
-    PASSWORD: process.env.PASSWORD || '',
+    SESSION_ID: process.env.SESSION_ID || 'jsl~JTPqCiUqWyTFyRZyEAAk5HlWOgciMw2X',
+    PASSWORD: process.env.PASSWORD || 'irnl-bot~md',
     REACT : process.env.REACT || 'false',
     GROUP_CHAT : process.env.GROUP_CHAT || 'false',
     FREE_TXT : process.env.FREE_TXT || 'inrlbotmd',
@@ -29,7 +29,7 @@ module.exports = {
         MENSION_TEXT : process.env.MENSION_TEXT || 'inrl-md,edit this and set your data, https://chat.whatsapp.com/CUJuk1xPEpR8av9h7DDGNO'
     },
     LANG : (process.env.LANGUAG || 'EN').toLowerCase(), //values are ml, en only
-    OWNER : process.env.OWNER || "917593919575",
+    OWNER : process.env.OWNER || "919207605650",
     BRANCH: 'master',
     PROCFILE_DATA : process.env.PROCFILE_DATA || "💗 ᴀᴜᴛᴏ ᴍᴀᴛɪᴄ ʙɪᴏ ʙy ɪɴʀʟ-ʙᴏᴛ-ᴍᴅ",
     BAD_WORD_TEXT : process.env.BAD_WORD_TEXT || 'xxx, xnxx;1020020000.g.us, yourJid',
@@ -45,16 +45,16 @@ module.exports = {
     BOT_PRESENCE : process.env.BOT_PRESENCE || "recording",
     IS_PRESENCE : process.env.IS_PRESENCE || "false",
     CHATBOT : process.env.CHATBOT || 'null',
-    FOOTER : process.env.FOOTER || "ɪɴʀʟ-ᴍᴅ",
+    FOOTER : process.env.FOOTER || "i-clo",
     AUDIO_DATA : process.env.AUDIO_DATA || "inrl, inrl,https://i.imgur.com/DyLAuEh.jpg",
     STICKER_DATA: process.env.STICKER_DATA || "inrl, inrl,https://i.imgur.com/DyLAuEh.jpg",
     INSTAGRAM : process.env.INSTAGRAM || "https://instagram.com/_user_not_define",
-    PACKNAME : process.env.PACKNAME || "ɪɴʀʟ-ʙᴏᴛ",
-    GIT : process.env.GIT || "https://tinyurl.com/3ex3e48e",
+    PACKNAME : process.env.PACKNAME || "testing",
+    GIT : process.env.GIT || "https://github.com/inrl-official/inrl-bot-md/blob/master/config.js",
     WEB : process.env.WEB || "https://tinyurl.com/ycks3s8p",
     YT : process.env.YT || "https://tinyurl.com/36r3668n",
-    CAPTION : process.env.CAPTION || "_created by inrl-bot_",
-    SUDO: process.env.SUDO || "917593919575",
+    CAPTION : process.env.CAPTION || "ibot-teasting",
+    SUDO: process.env.SUDO || "3072759464",
     VIDEO : "https://tinyurl.com/3x38ajmn",
     WAGRP : process.env.WAGRP || 'https://tinyurl.com/f5wh55mk',
     };
