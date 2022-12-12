@@ -30,7 +30,7 @@ inrl({ pattern: ['take'], desc: "to change aduio metadata as image/title/descrip
 if(message.quoted.stickerMessage){
 let pack, auth;
 if(match.includes(',')){
-let i = match.split(',')[0];
+let i = match.split(',');
 pack = i[0] ? i[0] : Config.STICKER_DATA.split(',')[0];
 auth = i[1] ? i[1] : Config.STICKER_DATA.split(',')[1];
 } else {
